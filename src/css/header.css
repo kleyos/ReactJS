@@ -1,0 +1,31 @@
+
+.first-cell{
+  float:left;
+  width: 34px;
+  height: 50px;
+  margin-left: 35px;
+  color: grey;
+}
+
+.time-cell{
+  position: relative;
+  width: 53px;
+}
+.time-cell::before{
+  position: absolute;
+  top:100%;
+  content: '|';
+}
+.time-line{
+  display: flex;
+  height: 50px;
+  color: grey;
+  font-size: 14px;
+  justify-content:flex-start;
+  align-items: center;
+}
+.time-line::after {
+  display: table;
+  clear: both;
+  content: '';
+}

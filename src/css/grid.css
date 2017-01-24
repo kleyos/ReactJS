@@ -1,0 +1,94 @@
+
+.first-cell{
+  float:left;
+  width: 34px;
+  height: 50px;
+  margin-left: 35px;
+  color: grey;
+}
+
+.time-cell{
+  position: relative;
+  width: 53px;
+}
+.time-cell::before{
+  position: absolute;
+  top:100%;
+  content: '|';
+}
+.time-line{
+  display: flex;
+  height: 50px;
+  color: grey;
+  font-size: 14px;
+  justify-content:flex-start;
+  align-items: center;
+}
+.time-line::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.grid{
+	width: 500px; 
+}
+.all-day{
+	float:left;
+	width: 33px;
+  	height: 50px;
+  	border: 1px solid #b7b5b5;
+  	background: #c8c8c8;
+  cursor: pointer;
+}
+.grid-cell{
+	float:left;
+	width: 17px;
+  	height: 50px;
+  	border-right: 1px solid #c8c8c8;
+  	border-bottom: 1px solid #c8c8c8;
+  	background: #fff;
+}
+.active, .checked{
+	background: rgba(200, 200, 200, 0.64);
+}
+.name-day{
+	float:left;
+	width: 33px;
+  	height: 50px;
+  	border: 1px solid #c8c8c8;
+  	background: #fff;
+  user-select: none ;
+}
+.check{
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 45% auto;
+  border-radius: 100%;
+  background: #ffffff;
+  line-height: 19px;
+}
+
+
+.grid-row:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+.btn{
+	text-align: right;
+}
+.clear, .save{
+  margin-right: 15px;
+  padding: 10px 25px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.clear:hover, .save:hover{
+  background: #a7a2a2;
+}
