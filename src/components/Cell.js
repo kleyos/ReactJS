@@ -23,6 +23,7 @@ class Cell extends Component {
 	   return (
 	     <div className={this.props.clN} 
 		  	  onMouseDown={this.onMouseDown.bind(this)}
+  			  onMouseOver={this.onMouseOver}
 			  onClick={this.handleClick.bind(this)}
 		></div>
 	    );
