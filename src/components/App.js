@@ -75,19 +75,6 @@ handleClickCell(index, row){
 }
 
 
-// handleSelectRange(index, row, event){
-//   let copyData = [...this.state.arrData];
-//   let copyStatus = [...this.state.status]; 
-  
-//   while(event===onMouseMove){
-//     copyData[row][index] = !copyData[row][index];
-//   }
-
-//   copyData[row].every(i => i === true ? copyStatus[row]=1 : copyStatus[row]=0)  
-  
-//   this.setState( {arrData:copyData, status:copyStatus} );
-// }
-
 handleSelectAll(row){
   let copyData = [...this.state.arrData];
   let copyStatus = [...this.state.status]; 
@@ -115,7 +102,6 @@ render() {
                                                     rowIndex={i}
                                                     clickCell={this.handleClickCell.bind(this)}
                                                     clickSelectAll={this.handleSelectAll.bind(this)}
-                                                    //selectRange={this.handleSelectRange.bind(this)}
                                                     status={status[i]}
                                                      />)}
         
