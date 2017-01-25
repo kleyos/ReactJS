@@ -12,19 +12,17 @@ class Cell extends Component {
 		this.props.clickCell(this.props.index, this.props.rowIndex);
 	
 	}
-	onMouseDown(){
-		
-		this.onMouseOver =(e) => {
-			e.target.className += ' active';
-		}
-	}
-		
+
+	selectCell(e){
+		if (e.buttons === 1){
+			this.props.clickCell(this.props.index, this.props.rowIndex);
+		} 
+	}	
 	render(){
 	   return (
 	     <div className={this.props.clN} 
-		  	  onMouseDown={this.onMouseDown.bind(this)}
-  			  onMouseOver={this.onMouseOver}
-			  onClick={this.handleClick.bind(this)}
+  			  onMouseOver={this.selectCell.bind(this)}
+			  onMouseDown={this.handleClick.bind(this)}
 		></div>
 	    );
 	}
