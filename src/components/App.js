@@ -52,11 +52,11 @@ saveChanges(){
                                                         newItem.push({bt:b*60, et:e*60+59})
                                                 }      
                                                 return newItem; })           
-        
 Object.keys(obj).map((el, index) => obj[el]=a[index]);
 
 this.setState({data:obj});
 
+console.log(obj);
 }
 clear(){
   let arrData = this.state.arrData;
